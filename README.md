@@ -4,7 +4,8 @@ Native JS custom select plugin.
 Use:
 
 HTML:
-<select name="select" class="sel1">
+<code>"
+  <select name="select" class="sel1">
   <option value="" selected disabled="">
     Выберите
   </option>
@@ -20,7 +21,8 @@ HTML:
   <option value="val10">val 10</option>
   <option value="val11">val 11</option>
   <option value="val12">val 12</option>
-</select>
+</select>"
+  </code>
 
 JS:
 document.querySelectorAll('.sel1').customSelect();
