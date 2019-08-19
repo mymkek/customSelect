@@ -1,0 +1,61 @@
+/*CUSTOM SELECT*/
+.customSelect {
+  position: relative;
+    height: 46px;
+}
+.customSelect * {
+  transition: all .25s ease;
+}
+.customSelect select {
+  height: 1px;
+  opacity: 0;
+}
+.customSelectCurrent {
+  border-bottom: 2px solid #e2e2e2;
+  cursor: pointer;
+}
+.customSelectCurrent, .customSelect ul li {
+  font-size: 15px;
+  color: #393029;
+  padding: 10px 0;
+  user-select: none;
+}
+.customSelect ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+    z-index: 25;  
+}
+.customSelect ul.openned {
+  display: block;
+  position: relative;
+  max-height: 300px;
+  overflow: auto;
+  z-index: 1090;
+}
+.customSelect ul li {
+  background: #f6f6f6;
+  cursor: pointer;
+  border-bottom: 1px solid #e1e1e1;
+}
+.customSelect ul li:hover {
+  background: #f2f2f2;
+}
+.customSelect ul li.disabled {
+  color: #8a8a8a;
+  cursor: no-drop;
+}
+.customSelect ul li.disabled:hover {
+  background: #f6f6f6;
+}
+.customSelectOpen {
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: url(../img/down-arrow-select.png) no-repeat center center;
+}
+/*CUSTOM SELECT*/
